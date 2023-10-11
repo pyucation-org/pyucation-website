@@ -74,33 +74,6 @@ export default function Page() {
       <div className="mx-auto w-full mt-10">
         <PricingCards />
       </div>
-      {/* marc */}
-      <div className="flex flex-row gap-20 justify-center align-center mx-56 animate-fade-in-upwards mt-72">
-        <div className="w-1/2 border-gray-600 border-2">
-          <Image
-            className="flex relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
-            src="/marc_cropped.png"
-            alt="marc knaussen"
-            width={600}
-            height={600}
-            priority
-          />
-        </div>
-        <div className="w-1/2 flex flex-col gap-3 justify-center">
-          <h2 className="text-black font-semibold text-3xl">Marc Knaussen</h2>
-          <h3 className="text-black text-xl">Gründer</h3>
-          <p className="text-lg text-gray-600 tracking-widest leading-8 font-sans">
-            "Ein Grundverständnis zur Analyse von Daten und das Wissen, wie man
-            die gewonnenen Informationen nutzt, ist eine wertvolle Fähigkeit.
-            <br></br>
-            Python ist eine mächtige Programmiersprache und sollte meiner
-            Meinung nach ein Standardwerkzeug im Baukasten jedes Menschen sein.
-            Ob für den privaten oder beruflichen Alltag spielt keine Rolle. Wir
-            helfen Dir, den Einstieg zu finden und bauen Deine Kompetenzen
-            entsprechend Deiner Wünsche aus."
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
