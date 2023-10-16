@@ -28,7 +28,7 @@ export default function Home() {
       <Start />
       {/*Customer Reviews */}
       <Carousel />
-      <Reviews />
+      {/* <Reviews /> */}
       {/*Services / Dienstleistungen */}
       <Services />
       {/*Contact Information / About the company */}
