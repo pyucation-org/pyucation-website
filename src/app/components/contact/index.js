@@ -1,10 +1,10 @@
 "use client";
 
+import { fadeInVariant } from "@/app/util/variants";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { fadeInVariant } from "../util/variants";
 
-export default function Page() {
+export default function Contact() {
   return (
     <div className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28">
       <div className="flex">

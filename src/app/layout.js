@@ -13,12 +13,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="bg-pyucation-1 bg-cover h-screen overflow-auto">
-          <Navbar />
-          {children}
-        </div>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <body className={inter.className}>
+//         <div className="bg-pyucation-1 bg-cover bg-fixed pb-40 -z-30">
+//           <Navbar />
+//           {children}
+//         </div>
+//       </body>
+//     </html>
+//   );
+// }

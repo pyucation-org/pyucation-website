@@ -1,22 +1,13 @@
-"use client";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
+import TabIndicator from "../tabIndicator";
+import { fadeInVariant, indicatorVariant } from "@/app/util/variants";
+import PricingCards from "../pricingCards";
+import InfoContent from "../infoContent";
 
-import React, { useEffect, useState } from "react";
-import { motion, useScroll } from "framer-motion";
-import InfoContent from "../components/infoContent";
-import PricingCards from "../components/pricingCards";
-import TabIndicator from "../components/tabIndicator";
-import { fadeInVariant, indicatorVariant } from "../util/variants";
-
-export default function Page() {
+function Services() {
   //State of Information Tab
   const [infoState, setInfoState] = useState("python");
-
-  //Scroll State
-  const { scrollYProgress } = useScroll();
-
-  useEffect(() => {
-    console.log("scroll y : ", scrollYProgress);
-  }, [scrollYProgress]);
 
   return (
     <div className="flex flex-col h-auto max-w-6xl  justify-start items-start mx-auto mt-28">
@@ -66,3 +57,5 @@ export default function Page() {
     </div>
   );
 }
+
+export default Services;
