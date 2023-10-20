@@ -53,7 +53,7 @@ const Carousel = ({ children }) => {
 
 function ReviewCarousel() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center my-16 ">
       <Carousel>
         {[...new Array(CARDS)].map((_, i) => (
           <Card

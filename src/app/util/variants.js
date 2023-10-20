@@ -12,3 +12,12 @@ export const indicatorVariant = {
   hidden: { scaleX: 0 },
   visible: { scaleX: 1 },
 };
+
+export const textVariant = {
+  hidden: {
+    x: "calc(100vw - 50%)",
+  },
+  visible: {
+    x: 0,
+  },
+};
