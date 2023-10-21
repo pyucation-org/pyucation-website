@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <main
       ref={ref}
-      className="bg-pyucation-1 bg-cover pb-40 h-screen overflow-auto"
+      className="bg-pyucation-1 bg-cover pb-40 h-screen overflow-auto overflow-x-hidden"
     >
       {/*NavBar */}
       <Navbar />
