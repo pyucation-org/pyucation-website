@@ -41,9 +41,6 @@ export default function Home() {
   const secRef = useRef(null);
   const isInView = useInView(secRef);
 
-  useEffect(() => {
-    console.log("Element is in view: ", isInView);
-  }, [isInView]);
 
   return (
     <main
@@ -54,18 +51,23 @@ export default function Home() {
       <Navbar />
 
       {/*Landing page content */}
-      {/* <section className=""> */}
+      <section>
       <Start scrollVal={scrollVal} scale={scale} translate={fixate} />
-      {/* </section> */}
-      {/*Services / Dienstleistungen */}
+      </section>
+
       <section ref={secRef}>
         <Services inView={isInView} />
       </section>
-      {/*Customer Reviews */}
-      <Carousel />
 
       {/*Contact Information / About the company */}
+      <section>
       <Contact />
+      </section>
+       {/*Customer Reviews */}
+      <section>      
+      <Reviews/>
+      </section>
+
     </main>
   );
 }

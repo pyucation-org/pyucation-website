@@ -10,19 +10,21 @@ function Services({ isInView }) {
   const [infoState, setInfoState] = useState("ai");
 
   return (
-    <div className="flex flex-col h-auto max-w-6xl  justify-start items-start mx-auto mt-28">
+    <motion.div className="flex flex-col h-auto max-w-6xl  justify-start items-start mx-auto mt-28"
+    variants={fadeInVariant}
+    initial="hidden"
+    whileInView="visible"
+    // transition={{delay: 0.5}}
+    >
       {/*Title */}
-      <motion.div
+      <div
         className="flex align-center justify-start"
-        variants={fadeInVariant}
-        initial="hidden"
-        whileInView="visible"
       >
         <h1 className="text-white text-6xl font-semibold align-start leading-snug">
           Unsere <br />
           Dienstleistungen
         </h1>
-      </motion.div>
+      </div>
 
       {/*Tabs */}
       <div className="flex align-center justify-between w-full mt-28">
@@ -46,15 +48,15 @@ function Services({ isInView }) {
       </div>
 
       {/*Pricing */}
-      <motion.div className="w-full">
+      <div className="w-full">
         <h2 className="mx-auto w-full text-center mt-20 text-white text-4xl">
           Preismodelle
         </h2>
-      </motion.div>
+      </div>
       <div className="mx-auto w-full mt-10">
         <PricingCards content={infoState} />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

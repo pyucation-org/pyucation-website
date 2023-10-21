@@ -10,7 +10,7 @@ import { fadeInRight } from "@/app/util/variants";
 const Navbar = () => {
   return (
     <header className="sticky top-5 w-full z-50">
-      <div className="2xl:max-w-4xl max-w-2xl flex-grow 2xl:h-16 h-12 bg-black bg-opacity-40 rounded-full mx-auto">
+      <div className="2xl:max-w-4xl max-w-2xl flex-grow 2xl:h-16 h-12 bg-black bg-opacity-40 backdrop-blur-lg rounded-lg mx-auto">
         <div className="flex flex-row justify-evenly items-center h-full">
           <Link className="navbar-button" href="/services">
             <p className="text-white text-md">Dienstleistungen</p>

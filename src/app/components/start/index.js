@@ -8,17 +8,17 @@ import { fadeInVariant, textVariant } from "@/app/util/variants";
 function Start({ scrollVal, scale, translate }) {
   return (
     <div className="flex flex-row 2xl:max-w-4xl justify-center items-center h-full mt-16 mx-auto">
-      <motion.div className="flex 2xl:max-w-4xl h-auto py-24 px-3 justify-between">
+      <motion.div className="flex 2xl:max-w-4xl h-auto py-24 px-3 justify-between"
+                variants={fadeInVariant}
+                initial="hidden"
+                animate="visible">
         <motion.div
           className="flex flex-col gap-4 justify-center transform-preserve"
-          variants={fadeInVariant}
-          initial="hidden"
-          animate="visible"
-          style={{
-            opacity: scrollVal,
-            scale: scale,
-            translateY: translate,
-          }}
+          // style={{
+          //   opacity: scrollVal,
+          //   scale: scale,
+          //   translateY: translate,
+          // }}
         >
           <h1 className="font-sans text-8xl text-white tracking-wider">
             pyucation
@@ -28,14 +28,14 @@ function Start({ scrollVal, scale, translate }) {
             projektbasiert und individuell gestaltbar
           </p>
         </motion.div>
-        {/* dark:drop-shadow-[0_0_0.3rem_#27B2DA] */}
+
         <motion.div
         className="flex items-center"
-          style={{
-            opacity: scrollVal,
-            scale: scale,
-            translateY: translate,
-          }}
+          // style={{
+          //   opacity: scrollVal,
+          //   scale: scale,
+          //   translateY: translate,
+          // }}
         >
           <Image
             className="relative left-20 -top-10 animate-fade-in-drop-shadow z-10"

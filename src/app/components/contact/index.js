@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28">
+    <div className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-56">
       <div className="flex">
         <h1 className="text-white text-6xl font-semibold align-start leading-snug">
           Unser Team
