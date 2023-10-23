@@ -20,11 +20,13 @@ function Services({ isInView }) {
       <div
         className="flex align-center justify-start"
       >
-        <h1 className="text-white text-6xl font-semibold align-start leading-snug">
+        <h1 className="text-white text-5xl font-semibold align-start leading-snug">
           Unsere <br />
           Dienstleistungen
         </h1>
       </div>
+      {/* <hr className="w-full bg-zinc-300 opacity-30">
+      </hr> */}
 
       {/*Tabs */}
       <div className="flex align-center justify-between w-full mt-28">
