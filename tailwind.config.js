@@ -19,6 +19,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "pyucation-1": "url('/background/1.jpg')",
+        "pyucation-2": "url('/background/4_edited.jpg')",
       },
       animation: {
         "fade-in-upwards": "fadein 0.3s 1",

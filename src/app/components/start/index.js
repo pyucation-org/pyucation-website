@@ -7,19 +7,14 @@ import { fadeInVariant, textVariant } from "@/app/util/variants";
 
 function Start({ scrollVal, scale, translate }) {
   return (
-    <div className="flex flex-row 2xl:max-w-4xl justify-center items-center h-full mt-16 mx-auto">
-      <motion.div className="flex 2xl:max-w-4xl h-auto py-24 px-3 justify-between"
-                variants={fadeInVariant}
-                initial="hidden"
-                animate="visible">
-        <motion.div
-          className="flex flex-col gap-4 justify-center transform-preserve"
-          // style={{
-          //   opacity: scrollVal,
-          //   scale: scale,
-          //   translateY: translate,
-          // }}
-        >
+    <div className="flex flex-row lg:max-w-4xl max-w-2xl justify-center items-center h-full mt-16 mx-auto">
+      <motion.div
+        className="flex lg:max-w-4xl max-w-2xl h-auto py-24 px-3 justify-between"
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.div className="flex flex-col gap-4 justify-center transform-preserve">
           <h1 className="font-sans text-8xl text-white tracking-wider">
             pyucation
           </h1>
@@ -29,14 +24,7 @@ function Start({ scrollVal, scale, translate }) {
           </p>
         </motion.div>
 
-        <motion.div
-        className="flex items-center"
-          // style={{
-          //   opacity: scrollVal,
-          //   scale: scale,
-          //   translateY: translate,
-          // }}
-        >
+        <motion.div className="flex items-center">
           <Image
             className="relative left-20 -top-10 animate-fade-in-drop-shadow z-10"
             src="/logo_notext.svg"

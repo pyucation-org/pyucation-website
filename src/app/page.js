@@ -41,18 +41,17 @@ export default function Home() {
   const secRef = useRef(null);
   const isInView = useInView(secRef);
 
-
   return (
     <main
       ref={ref}
       className="bg-pyucation-1 bg-cover pb-40 h-screen overflow-auto overflow-x-hidden"
     >
-      {/*NavBar */}
-      <Navbar />
+      {/* NavBar
+      <Navbar /> */}
 
       {/*Landing page content */}
-      <section>
-      <Start scrollVal={scrollVal} scale={scale} translate={fixate} />
+      <section className="h-full">
+        <Start scrollVal={scrollVal} scale={scale} translate={fixate} />
       </section>
 
       <section ref={secRef}>
@@ -61,13 +60,12 @@ export default function Home() {
 
       {/*Contact Information / About the company */}
       <section>
-      <Contact />
+        <Contact />
       </section>
-       {/*Customer Reviews */}
-      <section>      
-      <Reviews/>
+      {/*Customer Reviews */}
+      <section>
+        <Reviews />
       </section>
-
     </main>
   );
 }

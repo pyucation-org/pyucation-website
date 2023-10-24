@@ -10,16 +10,15 @@ function Services({ isInView }) {
   const [infoState, setInfoState] = useState("ai");
 
   return (
-    <motion.div className="flex flex-col h-auto max-w-6xl  justify-start items-start mx-auto mt-28"
-    variants={fadeInVariant}
-    initial="hidden"
-    whileInView="visible"
-    // transition={{delay: 0.5}}
+    <motion.div
+      className="flex flex-col h-auto max-w-6xl  justify-start items-start mx-auto mt-28"
+      variants={fadeInVariant}
+      initial="hidden"
+      whileInView="visible"
+      // transition={{delay: 0.5}}
     >
       {/*Title */}
-      <div
-        className="flex align-center justify-start"
-      >
+      <div className="flex align-center justify-start">
         <h1 className="text-white text-5xl font-semibold align-start leading-snug">
           Unsere <br />
           Dienstleistungen
