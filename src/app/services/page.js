@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion, useScroll } from "framer-motion";
+import { AnimatePresence, motion, useScroll } from "framer-motion";
 import InfoContent from "../components/infoContent";
 import PricingCards from "../components/pricingCards";
 import TabIndicator from "../components/tabIndicator";

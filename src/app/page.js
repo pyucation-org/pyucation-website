@@ -42,10 +42,7 @@ export default function Home() {
   const isInView = useInView(secRef);
 
   return (
-    <main
-      ref={ref}
-      className="bg-pyucation-1 bg-cover pb-40 h-screen overflow-auto overflow-x-hidden"
-    >
+    <main ref={ref} className="pb-40 h-screen overflow-auto overflow-x-hidden">
       {/* NavBar
       <Navbar /> */}
 
