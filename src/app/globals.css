@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-pyucation-1 bg-cover;
+  }
+}
+
 @layer utilities {
   .perspective-5 {
     perspective: 500px;
