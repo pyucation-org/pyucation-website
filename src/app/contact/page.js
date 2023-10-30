@@ -6,6 +6,7 @@ import { fadeInVariant } from "../util/variants";
 
 export default function Page() {
   return (
+    <main className="bg-pyucation-2 bg-cover pb-40 h-screen overflow-auto overflow-x-hidden">
     <div className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28">
       <div className="flex">
       </div>
@@ -41,5 +42,6 @@ export default function Page() {
       </form>
   </div>
     </div>
+    </main>
   );
 }
