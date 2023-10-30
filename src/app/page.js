@@ -51,9 +51,7 @@ export default function Home() {
         <Start scrollVal={scrollVal} scale={scale} translate={fixate} />
       </section>
 
-      <section ref={secRef}>
-        <Services inView={isInView} />
-      </section>
+      <section ref={secRef}>{/* <Services inView={isInView} /> */}</section>
 
       {/*Contact Information / About the company */}
       <section>
