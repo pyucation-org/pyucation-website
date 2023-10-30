@@ -8,44 +8,38 @@ export default function Page() {
   return (
     <div className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28">
       <div className="flex">
-        <h1 className="text-white text-6xl font-semibold align-start leading-snug">
-          Unser Team
-        </h1>
       </div>
-      <motion.div
-        className="flex flex-row gap-10 justify-center align-center mt-40"
-        variants={fadeInVariant}
-        initial="hidden"
-        animate="visible"
-      >
-        <div className="w-1/2 max-w-6xl mx-auto">
-          <Image
-            className="flex relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-xl"
-            src="/marc.jpg"
-            alt="marc knaussen"
-            width={600}
-            height={600}
-            priority
-          />
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h2 class="text-white text-5xl font-semibold mb-4 tracking-tight text-center">Kontaktieren sie uns!</h2>
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+        Wir freuen uns von Ihnen zu hören.
+        </p>
+      <form action="#" className="space-y-8">
+        <div className="flex flex-row gap-4 align-center mx-auto">
+          <div>
+          <label for="name" className="block mb-2 text-sm font-medium text-zinc-400">Vorname</label>
+          <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Max" required></input>
+          </div>
+          <div>
+          <label for="surname" className="block mb-2 text-sm font-medium text-zinc-400">Nachname</label>
+          <input type="text" id="surname" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Muster" required></input>
+          </div>
         </div>
-        <div className="w-1/2 flex flex-col gap-3 justify-center">
-          <h2 className="text-white font-semibold text-5xl">Marc Knaussen</h2>
-          <h3 className="text-zinc-400 text-2xl">Gründer</h3>
-          <p className="text-lg text-gray-400 tracking-wider leading-8 font-light">
-            "Ein Grundverständnis zur Analyse von Daten und das Wissen, wie man
-            die gewonnenen Informationen nutzt, ist eine wertvolle Fähigkeit.
-            <br></br>
-            Python ist eine mächtige Programmiersprache und sollte meiner
-            Meinung nach ein Standardwerkzeug im Baukasten jedes Menschen sein.
-            Ob für den privaten oder beruflichen Alltag spielt keine Rolle. Wir
-            helfen Dir, den Einstieg zu finden und bauen Deine Kompetenzen
-            entsprechend Deiner Wünsche aus."
-          </p>
-        </div>
-      </motion.div>
-      <div className="flex flex-col items-center">
-        <h2 className="text-white"> </h2>
-      </div>
+          <div>
+              <label for="email" className="block mb-2 text-sm font-medium  text-zinc-400">Email</label>
+              <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="example@pyucation.com" required/>
+          </div>
+          <div>
+              <label for="phone" class="block mb-2 text-sm font-medium text-zinc-400">Telefonnummer</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="" required/>
+          </div>
+          <div class="sm:col-span-2">
+              <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Ihre Nachricht</label>
+              <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Beschreiben Sie Ihr Anliegen"></textarea>
+          </div>
+          <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit focus:ring-4 focus:outline-none focus:ring-secondary bg-secondary hover:bg-primary">Send message</button>
+      </form>
+  </div>
     </div>
   );
 }
