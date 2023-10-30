@@ -7,7 +7,10 @@ import { fadeInVariant } from "../util/variants";
 export default function Page() {
   return (
     <main className="bg-pyucation-2 bg-cover pb-40 h-screen overflow-auto overflow-x-hidden">
-    <div className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28">
+    <motion.div className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28"
+    variants={fadeInVariant}
+    initial="hidden"
+    animate="visible">
       <div className="flex">
       </div>
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -41,7 +44,7 @@ export default function Page() {
           <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit focus:ring-4 focus:outline-none focus:ring-secondary bg-secondary hover:bg-primary">Send message</button>
       </form>
   </div>
-    </div>
+    </motion.div>
     </main>
   );
 }
