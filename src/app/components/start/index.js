@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { fadeInVariant, textVariant } from "@/app/util/variants";
 
-function Start({ scrollVal, scale, translate }) {
+function Start() {
   return (
     <div className="flex flex-row lg:max-w-4xl max-w-2xl justify-center items-center h-full mt-16 mx-auto">
       <motion.div

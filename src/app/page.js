@@ -17,39 +17,24 @@ export default function Home() {
    * Landing page of the website. Includes branding, vision and user reviews/recommendations
    */
 
-  const ref = useRef(null);
-  const { scrollY, scrollYProgress } = useScroll({
-    container: ref,
-  });
-  const scrollVal = useTransform(
-    scrollYProgress,
-    [0, 0.05, 0.1, 0.15],
-    [1, 1, 0.1, 0]
-  );
-  const scale = useTransform(
-    scrollYProgress,
-    [0, 0.05, 0.1, 0.15],
-    [1, 1, 0.6, 0.2]
-  );
-  const rotate = useTransform(
-    scrollYProgress,
-    [0, 0.05, 0.1, 0.15],
-    [0, 0, 65, 90]
-  );
-  const fixate = useTransform(
-    scrollYProgress,
-    [0, 0.05, 0.1, 0.15],
-    [0, 0.05, 0.1, 0.15]
-  );
+  // const ref = useRef(null);
+  // const { scrollY, scrollYProgress } = useScroll({
+  //   container: ref,
+  // });
+  // const scrollVal = useTransform(
+  //   scrollYProgress,
+  //   [0, 0.05, 0.1, 0.15],
+  //   [1, 1, 0.1, 0]
+  // );
 
   // const reviewsRef = useRef(null);
   // const isReviewsInView = useInView(reviewsRef);
 
   return (
-    <main ref={ref} className="pb-40 h-screen overflow-auto overflow-x-hidden">
+    <main className="pb-40 h-screen overflow-auto overflow-x-hidden">
       {/*Branding Section with logo */}
       <section className="h-full">
-        <Start scrollVal={scrollVal} scale={scale} translate={fixate} />
+        <Start />
       </section>
 
       {/*Vision Section */}
