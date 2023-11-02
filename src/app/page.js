@@ -5,14 +5,18 @@ import Bubble from "./components/reviewBubble";
 import { useInView, motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { fadeInVariant } from "./util/variants";
-import Navbar from "./components/navbar";
 import Start from "./components/start";
 import Contact from "./components/contact";
 import Services from "./components/services";
 import Reviews from "./components/reviews";
-import Carousel from "./components/reviewCarousel";
+import Vision from "./components/vision";
 
 export default function Home() {
+  /**
+   * @description:
+   * Landing page of the website. Includes branding, vision and user reviews/recommendations
+   */
+
   const ref = useRef(null);
   const { scrollY, scrollYProgress } = useScroll({
     container: ref,
@@ -38,27 +42,23 @@ export default function Home() {
     [0, 0.05, 0.1, 0.15]
   );
 
-  const secRef = useRef(null);
-  const isInView = useInView(secRef);
+  // const reviewsRef = useRef(null);
+  // const isReviewsInView = useInView(reviewsRef);
 
   return (
     <main ref={ref} className="pb-40 h-screen overflow-auto overflow-x-hidden">
-      {/* NavBar
-      <Navbar /> */}
-
-      {/*Landing page content */}
+      {/*Branding Section with logo */}
       <section className="h-full">
         <Start scrollVal={scrollVal} scale={scale} translate={fixate} />
       </section>
 
-      <section ref={secRef}>{/* <Services inView={isInView} /> */}</section>
-
-      {/*Contact Information / About the company */}
-      <section>
-        <Contact />
+      {/*Vision Section */}
+      <section className="h-full">
+        <Vision />
       </section>
+
       {/*Customer Reviews */}
-      <section>
+      <section className="h-full">
         <Reviews />
       </section>
     </main>
