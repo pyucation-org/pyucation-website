@@ -40,7 +40,7 @@ const Navbar = () => {
           transition={{ delay: 1 }}
         >
           <SocialIcon
-            url="https://twitter.com/jaketrent"
+            url="https://github.com/pyucation"
             className="cursor-pointer hover:fill-gray-800"
             fgColor="white"
             bgColor="transparent"
@@ -54,13 +54,7 @@ const Navbar = () => {
             style={{ height: 40, width: 40 }}
           />
           <SocialIcon
-            url="https://www.youtube.com/@pyucation"
-            className="cursor-pointer"
-            fgColor="white"
-            bgColor="transparent"
-            style={{ height: 40, width: 40 }}
-          />
-          <SocialIcon
+            url="mailto:marc.benesch@pyucation.de"
             className="cursor-pointer"
             network="email"
             fgColor="white"
