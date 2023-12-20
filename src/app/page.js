@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       {/*Customer Reviews */}
-      <section className="h-full mb-40">
+      <section className="h-full mb-40 pb-20">
         <Reviews />
       </section>
     </main>
