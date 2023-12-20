@@ -19,7 +19,7 @@ export default function Page() {
   }, [scrollYProgress]);
 
   return (
-    <main className="bg-pyucation-2 bg-cover pb-40 h-screen overflow-auto overflow-x-hidden">
+    <main className="pb-40 h-screen overflow-auto overflow-x-hidden">
       <div className="flex flex-col h-auto max-w-6xl  justify-start items-start mx-auto mt-28">
         {/*Title */}
         <motion.div
@@ -37,7 +37,7 @@ export default function Page() {
         {/*Tabs */}
         <div className="flex align-center justify-between w-full mt-28">
           <div className="flex flex-col px-20 py-10 mr-4 w-1/2">
-            <button classname="px-6" onClick={() => setInfoState("ai")}>
+            <button className="px-6" onClick={() => setInfoState("ai")}>
               <h2 className="text-5xl text-white">AI-Beratung</h2>
             </button>
             {infoState == "ai" && <TabIndicator />}

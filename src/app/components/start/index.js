@@ -9,23 +9,24 @@ function Start() {
   return (
     <div className="flex flex-row lg:max-w-4xl max-w-2xl justify-center items-center h-full mt-16 mx-auto">
       <motion.div
-        className="flex lg:max-w-4xl max-w-2xl h-auto py-24 px-3 justify-between"
+        className="flex md:flex-row flex-col lg:max-w-4xl max-w-2xl md:h-auto h-screen py-24 px-3 md:justify-between items-center"
         variants={fadeInVariant}
         initial="hidden"
         animate="visible"
       >
-        <motion.div className="flex flex-col gap-4 justify-center transform-preserve">
-          <h1 className="font-sans text-8xl text-white tracking-wider">
+        <motion.div className="flex flex-col gap-4 justify-center transform-preserve md:w-auto w-72">
+          <h1 className="font-sans md:text-8xl text-6xl text-white tracking-wider">
             pyucation
           </h1>
-          <p className="text-zinc-500 text-xl mt-10 ml-10 tracking-widest">
-            Weiterbildungen und Beratung rund um Künstliche Intelligenz und Programmieren in Python
+          <p className="text-zinc-500 md:text-xl text-lg mt-10 ml-10 tracking-widest">
+            Weiterbildungen und Beratung rund um Künstliche Intelligenz und
+            Programmieren in Python
           </p>
         </motion.div>
 
         <motion.div className="flex items-center">
           <Image
-            className="relative left-20 -top-10 animate-fade-in-drop-shadow z-10"
+            className="relative md:left-20 md:-top-10 top-20 animate-fade-in-drop-shadow z-10"
             src="/logo_notext.svg"
             alt="Pyucation Logo"
             width={800}

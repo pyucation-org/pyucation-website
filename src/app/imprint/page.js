@@ -11,26 +11,37 @@ function Page() {
   });
 
   return (
-    <main className="bg-pyucation-2 bg-cover pb-20 h-screen overflow-auto overflow-x-hidden flex flex-col items-center justify-center">
-      <motion.div className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28"
+    <main className="pb-20 h-screen overflow-auto overflow-x-hidden flex flex-col items-center justify-center">
+      <motion.div
+        className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28"
         variants={fadeInVariant}
         initial="hidden"
-        animate="visible">
-          <div className="flex">
-          </div>
-          <div className="p-4 rounded-lg shadow-lg max-w-2xl">
-            <h1 className="text-white text-5xl font-semibold mb-8 tracking-tight text-center">Impressum</h1>
-            <p className="text-white mb-2"><strong>Marc Benesch - pyucation</strong></p>
-            <p className="text-white mb-6">Wiegandweg 4, 80937 München</p>
-            <p className="text-white mb-2">Telefon: +49 152 58521568</p>
-            <p className="text-white mb-2">Email: marc.benesch@pyucation.de</p>
-            <p className="text-white mb-6">Geschäftsführer: Marc Benesch</p>
-            <p className="text-white mb-2">Handelsregister: tbd</p>
-            <p className="text-white mb-2">Umsatzsteuer-ID: umsatzsteuerbefreit nach § 19 UStG</p>
-            <p className="text-white my-2">Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV): Marc Benesch</p>
-            <p className="text-white mt-10">© 2024 pyucation. All Rights Reserved.</p>
+        animate="visible"
+      >
+        <div className="flex"></div>
+        <div className="p-4 rounded-lg shadow-lg max-w-2xl">
+          <h1 className="text-white text-5xl font-semibold mb-8 tracking-tight text-center">
+            Impressum
+          </h1>
+          <p className="text-white mb-2">
+            <strong>Marc Benesch - pyucation</strong>
+          </p>
+          <p className="text-white mb-6">Wiegandweg 4, 80937 München</p>
+          <p className="text-white mb-2">Telefon: +49 152 58521568</p>
+          <p className="text-white mb-2">Email: marc.benesch@pyucation.de</p>
+          <p className="text-white mb-6">Geschäftsführer: Marc Benesch</p>
+          <p className="text-white mb-2">Handelsregister: tbd</p>
+          <p className="text-white mb-2">
+            Umsatzsteuer-ID: umsatzsteuerbefreit nach § 19 UStG
+          </p>
+          <p className="text-white my-2">
+            Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV): Marc Benesch
+          </p>
+          <p className="text-white mt-10">
+            © 2024 pyucation. All Rights Reserved.
+          </p>
         </div>
-    </motion.div>
+      </motion.div>
     </main>
   );
 }

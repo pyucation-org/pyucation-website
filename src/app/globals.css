@@ -22,7 +22,7 @@
   }
 
   .navbar-button {
-    @apply flex items-center justify-center text-white w-1/3 min-w-[140px] h-full rounded-lg hover:font-semibold transition-all;
+    @apply flex items-center justify-center text-white w-1/3 md:min-w-[140px] h-full rounded-lg hover:font-semibold transition-all;
   }
   /* hover:bg-secondary  hover:bg-opacity-25 */
 
@@ -104,11 +104,11 @@
     position: relative;
     padding-left: 1.5em; /* Provide space for the checkmark */
   }
-  
+
   .checkmark-bullet li:before {
-    content: '✓'; /* Unicode character for the checkmark */
+    content: "✓"; /* Unicode character for the checkmark */
     position: absolute;
     left: 0;
-    color: #27B2DA; /* Set the color of the checkmark */
+    color: #27b2da; /* Set the color of the checkmark */
   }
 }
