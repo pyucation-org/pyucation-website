@@ -98,4 +98,17 @@
     right: 0;
     transform: translateX(150%) translateY(-50%);
   }
+
+  .checkmark-bullet li {
+    list-style-type: none; /* Remove default list-style */
+    position: relative;
+    padding-left: 1.5em; /* Provide space for the checkmark */
+  }
+  
+  .checkmark-bullet li:before {
+    content: '✓'; /* Unicode character for the checkmark */
+    position: absolute;
+    left: 0;
+    color: #27B2DA; /* Set the color of the checkmark */
+  }
 }

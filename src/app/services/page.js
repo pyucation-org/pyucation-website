@@ -9,7 +9,7 @@ import { fadeInVariant } from "../util/variants";
 
 export default function Page() {
   //State of Information Tab
-  const [infoState, setInfoState] = useState("python");
+  const [infoState, setInfoState] = useState("ai");
 
   //Scroll State
   const { scrollYProgress } = useScroll();
@@ -36,17 +36,17 @@ export default function Page() {
 
         {/*Tabs */}
         <div className="flex align-center justify-between w-full mt-28">
-          <div className="flex flex-col px-20 py-10 ml-4 w-1/2">
-            <button className="px-6" onClick={() => setInfoState("python")}>
-              <h2 className="text-5xl text-white">Python-Kurs</h2>
-            </button>
-            {infoState == "python" && <TabIndicator />}
-          </div>
           <div className="flex flex-col px-20 py-10 mr-4 w-1/2">
             <button classname="px-6" onClick={() => setInfoState("ai")}>
               <h2 className="text-5xl text-white">AI-Beratung</h2>
             </button>
             {infoState == "ai" && <TabIndicator />}
+          </div>
+          <div className="flex flex-col px-20 py-10 ml-4 w-1/2">
+            <button className="px-6" onClick={() => setInfoState("python")}>
+              <h2 className="text-5xl text-white">Python-Kurs</h2>
+            </button>
+            {infoState == "python" && <TabIndicator />}
           </div>
         </div>
 

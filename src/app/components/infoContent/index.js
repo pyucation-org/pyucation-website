@@ -4,19 +4,54 @@ import { motion } from "framer-motion";
 import React from "react";
 
 function InfoContent({ content = "ai" }) {
+   let infoText;
+   let infoImage;
+   let specialText;
+
+   if (content === "ai") {
+    infoText = "Unsere Schulungen werden auf die individuellen Bedürfnisse Ihrer Organisation zugeschnitten. Wir werden Ihnen und Ihren Mitarbeiterinnen und Mitarbeitern ein fundamentales Verständnis darüber vermitteln, wie Künstliche Intelligenz funktioniert. Dabei ist unser Anspruch, jeden Menschen unabhängig von seinem Vorwissen mitzunehmen. Grundlegend ist unser Weiterbildungsprogramm in zwei Bereiche aufgeteilt:";
+    infoImage = "/ai-pillars.png";
+    specialText = (
+      <>
+        Unsere Vorträge bieten inspirierende Einblicke in die Welt der Künstlichen Intelligenz. Je nach Veranstaltung gestalten wir unsere Auftritte. Themen in der Vergangenheit waren u. a.:
+        <ul className="list-disc list-outside ml-60 text-left">
+          <li>„Bullshit-Bingo vermeiden“ – Eine Begriffsabgrenzung zu KI</li>
+          <li>Grundlagen des Maschinellen Lernens</li>
+          <li>Deep Learning und Neuronale Netzwerke</li>
+          <li>Generative AI – Potenziale und Gefahren</li>
+          <li>Digitalisierung im Gesundheitswesen – KI in der Medizin</li>
+        </ul>
+      </>
+      );
+  } else if (content === "python") {
+    infoText = "Wir möchten jedem Menschen das Potenzial der Programmiersprache Python zeigen. Die Entwicklung von generellen Lösungsstrategien zur Automatisierung und Datenverarbeitung sowie ein grundlegendes technisches Verständnis sind Fähigkeiten, die heutzutage unverzichtbar sind.";
+    infoImage = "/python-pillars.png";
+    specialText = "Wir bieten sowohl Einführungen für Anfänger als auch Kurse für Fortgeschrittene an. Module wie numpy, pandas, pytorch, sklearn, flask und viele mehr können wir ebenso bedienen. Was uns auch hier besonders auszeichnet ist der hohe Praxisbezug und die individuelle Anpassung an unsere Kundinnen und Kunden. Wir unterstützen auch bei der Verwirklichung eigener Projektideen bis zur Implementierung."
+  }
+
   return (
     <div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <p className="text-zinc-300 text-xl text-center tracking-widest leading-10 ">
-        {content} Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-        est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+      <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
+        {infoText}
       </p>
+      <img src={infoImage} alt={content} className="w-full h-auto pt-10 pb-8"/>
+      {
+        // show only if ai is selected
+        content === "ai" ? (
+          <div>
+          <h2 className="text-zinc-300 font-semibold text-xl mt-16 mb-2 text-center tracking-widest leading-12">
+            AI-Vorträge und Key Notes
+          </h2>,
+          <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
+              {specialText}
+          </p>
+          </div>
+        ) : ( // show only if python is selected
+          <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
+            {specialText}
+          </p>
+        )
+      }
     </div>
   );
 }

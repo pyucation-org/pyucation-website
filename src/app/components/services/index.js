@@ -5,6 +5,8 @@ import { fadeInVariant, indicatorVariant } from "@/app/util/variants";
 import PricingCards from "../pricingCards";
 import InfoContent from "../infoContent";
 
+// not used??
+
 function Services({ isInView }) {
   //State of Information Tab
   const [infoState, setInfoState] = useState("ai");

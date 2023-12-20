@@ -14,6 +14,7 @@ function PricingCards({ content = "python" }) {
                 tag={el.tag}
                 price={el.price}
                 text={el.description}
+                popular={el.popular}
               />
             );
           })
@@ -25,6 +26,7 @@ function PricingCards({ content = "python" }) {
                 tag={el.tag}
                 price={el.price}
                 text={el.description}
+                popular={el.popular}
               />
             );
           })}
