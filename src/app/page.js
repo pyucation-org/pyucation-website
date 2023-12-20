@@ -38,7 +38,7 @@ export default function Home() {
       </section>
 
       {/*Vision Section */}
-      <section className="h-full">
+      <section className="h-full mb-40">
         <Vision />
       </section>
 

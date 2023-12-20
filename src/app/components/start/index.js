@@ -19,8 +19,7 @@ function Start() {
             pyucation
           </h1>
           <p className="text-zinc-500 text-xl mt-10 ml-10 tracking-widest">
-            Weiterbildung und Beratung in Python: praxisorientiert,
-            projektbasiert und individuell gestaltbar
+            Weiterbildungen und Beratung rund um Künstliche Intelligenz und Programmieren in Python
           </p>
         </motion.div>
 
@@ -28,7 +27,7 @@ function Start() {
           <Image
             className="relative left-20 -top-10 animate-fade-in-drop-shadow z-10"
             src="/logo_notext.svg"
-            alt="Next.js Logo"
+            alt="Pyucation Logo"
             width={800}
             height={800}
             priority

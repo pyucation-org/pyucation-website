@@ -26,7 +26,7 @@ function Vision() {
         whileInView="visible"
       >
         Wir möchten jedem Menschen die Grundlagen der Künstlichen Intelligenz
-        näherbringen, um die Welt rund um diese Technologie besser zu verstehen.
+        näherbringen, um die Welt rund um diese Technologie besser zu verstehen. Das "Werkzeug Python" ist dabei unverzichtbar.
       </motion.p>
       <motion.div
         className="flex flex-row mx-auto p-4 mt-20"
@@ -34,17 +34,9 @@ function Vision() {
         initial="hidden"
         whileInView="visible"
       >
-        <div className="w-80 h-80 bg-primary rounded-full shadow-2xl text-center">
-          Placeholder
-        </div>
-        <div className="w-80 h-80 bg-secondary rounded-full shadow-2xl text-center">
-          {" "}
-          Placeholder
-        </div>
-        <div className="w-80 h-80 bg-accentLight rounded-full shadow-2xl text-center">
-          {" "}
-          Placeholder
-        </div>
+        <div className="w-100 h-80 shadow-2x1 text-center">
+        <img src="/vision.png" alt="Description of Image" className="w-full h-full object-contain"/>
+      </div>
       </motion.div>
     </motion.div>
   );
