@@ -26,7 +26,7 @@ function Vision() {
         whileInView="visible"
       >
         Wir möchten jedem Menschen die Grundlagen der Künstlichen Intelligenz
-        näherbringen, um die Welt rund um diese Technologie besser zu verstehen. Das "Werkzeug Python" ist dabei unverzichtbar.
+        näherbringen, um die Welt rund um diese Technologie besser zu verstehen. Das Werkzeug Python ist dabei unverzichtbar.
       </motion.p>
       <motion.div
         className="flex flex-row mx-auto p-4 mt-20"
