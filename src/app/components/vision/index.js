@@ -12,7 +12,7 @@ function Vision() {
    */
   return (
     <motion.div
-      className="flex flex-col md:h-auto h-fit max-w-6xl md:justify-start items-start mx-auto mt-56 px-8"
+      className="flex flex-col md:h-auto h-fit max-w-6xl md:justify-start items-start mx-auto px-8"
       variants={fadeInVariant}
       initial="hidden"
       whileInView="visible"
@@ -28,7 +28,7 @@ function Vision() {
       >
         Wir möchten jedem Menschen die Grundlagen der Künstlichen Intelligenz
         näherbringen, um die Welt rund um diese Technologie besser zu verstehen.
-        Das "Werkzeug Python" ist dabei unverzichtbar.
+        Das Werkzeug Python ist dabei unverzichtbar.
       </motion.p>
       <motion.div
         className="flex flex-row mx-auto p-4 md:mt-20"

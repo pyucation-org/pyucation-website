@@ -24,7 +24,7 @@ function Start() {
           </p>
         </motion.div>
 
-        <motion.div className="flex items-center">
+        <motion.div className="flex items-center w-72 md:w-auto">
           <Image
             className="relative md:left-20 md:-top-10 top-20 animate-fade-in-drop-shadow z-10"
             src="/logo_notext.svg"

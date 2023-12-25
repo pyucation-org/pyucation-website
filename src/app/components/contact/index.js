@@ -32,14 +32,14 @@ export default function Contact() {
           <h2 className="text-white font-semibold text-5xl">Marc Knaussen</h2>
           <h3 className="text-zinc-400 text-2xl">Gründer</h3>
           <p className="text-lg text-gray-400 tracking-wider leading-8 font-light">
-            "Ein Grundverständnis zur Analyse von Daten und das Wissen, wie man
+            Ein Grundverständnis zur Analyse von Daten und das Wissen, wie man
             die gewonnenen Informationen nutzt, ist eine wertvolle Fähigkeit.
             <br></br>
             Python ist eine mächtige Programmiersprache und sollte meiner
             Meinung nach ein Standardwerkzeug im Baukasten jedes Menschen sein.
             Ob für den privaten oder beruflichen Alltag spielt keine Rolle. Wir
             helfen Dir, den Einstieg zu finden und bauen Deine Kompetenzen
-            entsprechend Deiner Wünsche aus."
+            entsprechend Deiner Wünsche aus.
           </p>
         </div>
       </motion.div>

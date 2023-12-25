@@ -13,17 +13,17 @@ export default function Home() {
   return (
     <main className="pb-40 h-screen overflow-auto overflow-x-hidden">
       {/*Branding Section with logo */}
-      <section className="md:h-full h-fit">
+      <section className="md:h-full h-fit mb-20">
         <Start />
       </section>
 
       {/*Vision Section */}
-      <section className="md:h-full h-fit mb-20">
+      <section className="xl:h-full h-fit mb-20">
         <Vision />
       </section>
 
       {/*Customer Reviews */}
-      <section className="md:h-full h-fit mt-20 mb-20">
+      <section className="md:h-full h-fit xl:mt-0 mt-20 mb-20">
         <Reviews />
       </section>
     </main>
