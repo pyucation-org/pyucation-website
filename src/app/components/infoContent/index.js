@@ -18,7 +18,7 @@ function InfoContent({ content = "ai" }) {
         Unsere Vorträge bieten inspirierende Einblicke in die Welt der
         Künstlichen Intelligenz. Je nach Veranstaltung gestalten wir unsere
         Auftritte. Themen in der Vergangenheit waren u. a.:
-        <ul className="list-disc list-outside ml-60 text-left">
+        <ul className="list-disc list-outside md:ml-60 ml-10 text-left">
           <li>„Bullshit-Bingo vermeiden“ – Eine Begriffsabgrenzung zu KI</li>
           <li>Grundlagen des Maschinellen Lernens</li>
           <li>Deep Learning und Neuronale Netzwerke</li>
@@ -44,7 +44,7 @@ function InfoContent({ content = "ai" }) {
       animate="visible"
       // transition={{ layout: { duration: 0.1 } }}
     >
-      <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
+      <p className="text-zinc-300 md:text-xl text-md text-center tracking-widest leading-10">
         {infoText}
       </p>
       <img src={infoImage} alt={content} className="w-full h-auto pt-10 pb-8" />
@@ -52,17 +52,17 @@ function InfoContent({ content = "ai" }) {
         // show only if ai is selected
         content === "ai" ? (
           <div>
-            <h2 className="text-zinc-300 font-semibold text-xl mt-16 mb-2 text-center tracking-widest leading-12">
+            <h2 className="text-zinc-300 font-semibold md:text-xl text-lg mt-16 mb-2 text-center tracking-widest leading-12">
               AI-Vorträge und Key Notes
             </h2>
             ,
-            <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
+            <p className="text-zinc-300 md:text-xl text-md text-center tracking-widest leading-10">
               {specialText}
             </p>
           </div>
         ) : (
           // show only if python is selected
-          <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
+          <p className="text-zinc-300 md:text-xl text-md text-center tracking-widest leading-10">
             {specialText}
           </p>
         )

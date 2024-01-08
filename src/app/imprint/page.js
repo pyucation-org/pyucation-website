@@ -13,14 +13,14 @@ function Page() {
   return (
     <main className="pb-20 h-screen overflow-auto overflow-x-hidden flex flex-col items-center justify-center">
       <motion.div
-        className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-28"
+        className="flex flex-col h-auto max-w-6xl justify-start items-start mx-auto mt-0"
         variants={fadeInVariant}
         initial="hidden"
         animate="visible"
       >
         <div className="flex"></div>
-        <div className="p-4 rounded-lg shadow-lg max-w-2xl">
-          <h1 className="text-white text-5xl font-semibold mb-8 tracking-tight text-center">
+        <div className="py-4 rounded-lg shadow-lg max-w-2xl">
+          <h1 className="text-white md:text-5xl text-4xl font-semibold mb-10 tracking-tight text-center">
             Impressum
           </h1>
           <p className="text-white mb-2">

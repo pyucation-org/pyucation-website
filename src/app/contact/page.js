@@ -15,7 +15,7 @@ export default function Page() {
       >
         <div className="flex"></div>
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 class="text-white text-5xl font-semibold mb-4 tracking-tight text-center">
+          <h2 class="text-white md:text-5xl text-4xl font-semibold mb-4 tracking-tight text-center">
             Kontaktieren Sie uns!
           </h2>
           <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
