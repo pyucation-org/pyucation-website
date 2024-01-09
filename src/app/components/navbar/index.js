@@ -54,9 +54,9 @@ const Navbar = () => {
             style={{ height: 40, width: 40 }}
           />
           <SocialIcon
-            url="mailto:marc.benesch@pyucation.de"
+            url="https://www.linkedin.com/company/pyucation/"
             className="cursor-pointer"
-            network="email"
+            network="linkedin"
             fgColor="white"
             bgColor="transparent"
             style={{ height: 40, width: 40 }}
