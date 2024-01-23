@@ -3,6 +3,7 @@
 import { fadeInVariant } from "@/app/util/variants";
 import { motion } from "framer-motion";
 import React from "react";
+import AiCards from "./ai_cards";
 
 function InfoContent({ content = "ai" }) {
   let infoText;
@@ -14,7 +15,7 @@ function InfoContent({ content = "ai" }) {
       "Unsere Schulungen werden auf die individuellen Bedürfnisse Ihrer Organisation zugeschnitten. Wir werden Ihnen und Ihren Mitarbeiterinnen und Mitarbeitern ein fundamentales Verständnis darüber vermitteln, wie Künstliche Intelligenz funktioniert. Dabei ist unser Anspruch, jeden Menschen unabhängig von seinem Vorwissen mitzunehmen. Grundlegend ist unser Weiterbildungsprogramm in zwei Bereiche aufgeteilt:";
     infoImage = "/ai-pillars.png";
     specialText = (
-      <>
+      <div className="font-sans leading-8 tracking-wider">
         Unsere Vorträge bieten inspirierende Einblicke in die Welt der
         Künstlichen Intelligenz. Je nach Veranstaltung gestalten wir unsere
         Auftritte. Themen in der Vergangenheit waren u. a.:
@@ -25,7 +26,7 @@ function InfoContent({ content = "ai" }) {
           <li>Generative AI – Potenziale und Gefahren</li>
           <li>Digitalisierung im Gesundheitswesen – KI in der Medizin</li>
         </ul>
-      </>
+      </div>
     );
   } else if (content === "python") {
     infoText =
@@ -44,25 +45,26 @@ function InfoContent({ content = "ai" }) {
       animate="visible"
       // transition={{ layout: { duration: 0.1 } }}
     >
-      <p className="text-zinc-300 md:text-xl text-md text-center tracking-widest leading-10">
+      <p className="text-zinc-300 md:text-xl text-md text-center tracking-widest leading-10 font-sans">
         {infoText}
       </p>
-      <img src={infoImage} alt={content} className="w-full h-auto pt-10 pb-8" />
+      {/* <img src={infoImage} alt={content} className="w-full h-auto pt-10 pb-8" /> */}
+      {content === "ai" ? <AiCards /> : <></>}
       {
         // show only if ai is selected
         content === "ai" ? (
           <div>
-            <h2 className="text-zinc-300 font-semibold md:text-xl text-lg mt-16 mb-2 text-center tracking-widest leading-12">
+            <h2 className="text-zinc-300 font-semibold text-xl mt-16 mb-2 text-center tracking-widest leading-12">
               AI-Vorträge und Key Notes
             </h2>
             ,
-            <p className="text-zinc-300 md:text-xl text-md text-center tracking-widest leading-10">
+            <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
               {specialText}
             </p>
           </div>
         ) : (
           // show only if python is selected
-          <p className="text-zinc-300 md:text-xl text-md text-center tracking-widest leading-10">
+          <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
             {specialText}
           </p>
         )
