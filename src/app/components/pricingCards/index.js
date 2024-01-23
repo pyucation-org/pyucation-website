@@ -4,7 +4,7 @@ import { pricingsAI, pricingsPython } from "@/app/util/pricingOptions";
 
 function PricingCards({ content = "python" }) {
   return (
-    <div className="flex flex-row gap-4 w-full justify-between">
+    <div className="flex flex-wrap gap-2 w-full lg:justify-between justify-center">
       {content == "python"
         ? pricingsPython.map((el, index) => {
             return (

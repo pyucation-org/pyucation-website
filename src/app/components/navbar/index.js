@@ -6,28 +6,55 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { fadeInRight } from "@/app/util/variants";
 import Watermark from "../watermark";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+export default function NavBar() {
+  //Helper function to highlight current subpage in NavBar
+  function useActivePath(path) {
+    const pathname = usePathname();
+
+    const checkActivePath = (path) => {
+      return path === pathname;
+    };
+    return checkActivePath;
+  }
+
+  //Hook for helper function
+  const checkActivePath = useActivePath();
+
   return (
     <header className="top-0 w-full z-50 absolute overflow-hidden">
-      <div className="flex flex-row items-center justify-evenly bg-black bg-opacity-40 backdrop-blur-lg rounded-b-2xl">
-        <div className="hidden sm:flex flex-row max-w-lg w-56 h-8 justify-evenly items-center">
+      <div className="flex flex-row items-center justify-evenly bg-black bg-opacity-40 backdrop-blur-lg md:rounded-b-2xl">
+        <div className="sm:flex flex-row max-w-lg md:w-56 h-8 justify-evenly items-center">
           <Watermark />
         </div>
         <div className="2xl:max-w-4xl max-w-2xl flex-grow 2xl:h-16 h-12">
           <div className="flex flex-row justify-evenly items-center h-full gap-1 overflow-hidden">
             <Link className="navbar-button group" href="/services">
-              <div className="bg-secondary bg-opacity-40 w-0 2xl:h-16 h-12 rounded-full absolute group-hover:w-[150px] transition-all blur-lg"></div>
+              <div
+                className={`bg-secondary bg-opacity-40 w-0 2xl:h-16 h-12 rounded-full absolute md:group-hover:w-[150px] transition-all blur-lg ${
+                  checkActivePath("/services") ? "md:w-[150px] w-[100px]" : ""
+                }`}
+              ></div>
               <p className="text-white lg:text-base text-sm">
                 Dienstleistungen
               </p>
             </Link>
             <Link className="navbar-button group" href="/contact">
-              <div className="bg-secondary bg-opacity-40 w-0 2xl:h-16 h-12 rounded-full  absolute group-hover:w-[150px] transition-all blur-lg"></div>
+              <div
+                className={`bg-secondary bg-opacity-40 w-0 2xl:h-16 h-12 rounded-full absolute md:group-hover:w-[150px] transition-all blur-lg ${
+                  checkActivePath("/contact") ? "md:w-[150px] w-[100px]" : ""
+                }`}
+              ></div>
               <p className="text-white lg:text-base text-sm">Kontakt</p>
             </Link>
             <Link className="navbar-button group" href="/imprint">
-              <div className="bg-secondary bg-opacity-40 w-0 2xl:h-16 h-12 rounded-full  absolute group-hover:w-[150px] transition-all blur-lg"></div>
+              <div
+                className={`bg-secondary bg-opacity-40 w-0 2xl:h-16 h-12 rounded-full absolute md:group-hover:w-[150px] transition-all blur-lg ${
+                  checkActivePath("/imprint") ? "md:w-[150px] w-[100px]" : ""
+                }`}
+              ></div>
               <p className="text-white lg:text-base text-sm">Impressum</p>
             </Link>
           </div>
@@ -65,6 +92,4 @@ const Navbar = () => {
       </div>
     </header>
   );
-};
-
-export default Navbar;
+}
