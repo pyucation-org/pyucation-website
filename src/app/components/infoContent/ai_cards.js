@@ -3,7 +3,7 @@ import React from "react";
 function AiCards() {
   return (
     <div className="flex md:flex-row flex-col md:justify-between items-center lg:w-2/3 w-full gap-4 mx-auto mt-10 mb-10">
-      <div className=" bg-zinc-200 bg-opacity-10 backdrop-blur-sm w-80 h-96 rounded-lg flex-col text-center text-white py-2">
+      <div className=" bg-zinc-200 bg-opacity-10 backdrop-blur-sm w-80 h-96 rounded-lg flex-col text-center text-white py-2 hover:bg-accentLight hover:bg-opacity-10 transition-all">
         <p className="mt-4 text-3xl font-sans">Grundlagen</p>
         <div className="p-4 mt-2">
           <hr className="border-zinc-400"></hr>
@@ -18,7 +18,7 @@ function AiCards() {
           </ul>
         </ul>
       </div>
-      <div className=" bg-zinc-200 bg-opacity-10 backdrop-blur-sm w-80 h-96 rounded-lg flex-col text-center text-white py-2">
+      <div className=" bg-zinc-200 bg-opacity-10 backdrop-blur-sm w-80 h-96 rounded-lg flex-col text-center text-white py-2 hover:bg-accentLight hover:bg-opacity-10 transition-all">
         <p className="mt-4 text-3xl font-sans">Erweiterte Konzepte</p>
         <div className="p-4 mt-2">
           <hr className="border-zinc-400"></hr>
