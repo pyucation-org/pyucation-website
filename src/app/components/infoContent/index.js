@@ -4,6 +4,7 @@ import { fadeInVariant } from "@/app/util/variants";
 import { motion } from "framer-motion";
 import React from "react";
 import AiCards from "./ai_cards";
+import PythonCards from "./python-cards";
 
 function InfoContent({ content = "ai" }) {
   let infoText;
@@ -49,7 +50,7 @@ function InfoContent({ content = "ai" }) {
         {infoText}
       </p>
       {/* <img src={infoImage} alt={content} className="w-full h-auto pt-10 pb-8" /> */}
-      {content === "ai" ? <AiCards /> : <></>}
+      {content === "ai" ? <AiCards /> : <PythonCards />}
       {
         // show only if ai is selected
         content === "ai" ? (
