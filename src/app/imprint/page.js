@@ -19,8 +19,8 @@ function Page() {
         animate="visible"
       >
         <div className="flex"></div>
-        <div className="py-4 rounded-lg shadow-lg max-w-2xl">
-          <h1 className="text-white md:text-5xl text-4xl font-semibold mb-10 tracking-tight text-center">
+        <div className="py-4 rounded-lg shadow-lg max-w-2xl px-4">
+          <h1 className="text-white md:text-5xl text-4xl font-semibold mb-10 tracking-tight text-left">
             Impressum
           </h1>
           <p className="text-white mb-2">

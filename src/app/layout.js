@@ -1,13 +1,13 @@
 import Navbar from "./components/navbar";
 import "./globals.css";
 
-import { Inter } from "next/font/google";
-
+import { Inter, Roboto } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pyucation - Weiterbildung und Beratung in KI und Python",
-  description: "Wir bieten Weiterbildungen und Beratung in Python und Künstliche Intelligenz an: Python Grundlagen und Machine Learning für Anfänger, Fortgeschrittene, Unternehmen und Bildungseinrichtungen. Wir unterstützen auch bei der Realisierung eigener Ideen."
+  description:
+    "Wir bieten Weiterbildungen und Beratung in Python und Künstliche Intelligenz an: Python Grundlagen und Machine Learning für Anfänger, Fortgeschrittene, Unternehmen und Bildungseinrichtungen. Wir unterstützen auch bei der Realisierung eigener Ideen.",
 };
 
 export default function RootLayout({ children }) {

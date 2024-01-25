@@ -109,6 +109,6 @@
     content: "✓"; /* Unicode character for the checkmark */
     position: absolute;
     left: 0;
-    color: #27b2da; /* Set the color of the checkmark */
+    color: #0d0f91; /* Set the color of the checkmark */
   }
 }

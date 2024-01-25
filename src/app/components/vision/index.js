@@ -16,6 +16,7 @@ function Vision() {
       variants={fadeInVariant}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
     >
       <h1 className="text-white text-6xl font-semibold align-start text-center md:text-start leading-snug">
         Unsere Vision
@@ -25,6 +26,7 @@ function Vision() {
         variants={fadeInVariant}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
       >
         Wir möchten jedem Menschen die Grundlagen der Künstlichen Intelligenz
         näherbringen, um die Welt rund um diese Technologie besser zu verstehen.
@@ -35,6 +37,7 @@ function Vision() {
         variants={fadeInVariant}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
       >
         <div className="w-100 h-80 shadow-2x1 text-center">
           <Image

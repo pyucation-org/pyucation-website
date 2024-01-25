@@ -5,9 +5,9 @@ import React, { useEffect, useState } from "react";
 function Watermark() {
   return (
     <Link href="/">
-      <div className="flex flex-row items-center justify-center">
+      <div className="flex flex-row items-center justify-center group">
         <Image
-          className="min-w-[40px]"
+          className="min-w-[40px] group-hover:min-w-[45px] transition-all"
           src="/logo_notext_white.svg"
           alt="Next.js Logo"
           width={35}
