@@ -13,8 +13,9 @@ function Start() {
         variants={fadeInVariant}
         initial="hidden"
         animate="visible"
+        viewport={{ once: true }}
       >
-        <motion.div className="flex flex-col gap-4 justify-center transform-preserve md:w-auto w-72">
+        <div className="flex flex-col gap-4 justify-center transform-preserve md:w-auto w-72">
           <h1 className="font-sans md:text-8xl text-6xl text-white tracking-wider">
             pyucation
           </h1>
@@ -22,9 +23,9 @@ function Start() {
             Weiterbildungen und Beratung rund um Künstliche Intelligenz und
             Programmieren in Python
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div className="flex items-center w-72 md:w-auto">
+        <div className="flex items-center w-72 md:w-auto">
           <Image
             className="relative md:left-20 md:-top-10 top-20 animate-fade-in-drop-shadow z-10"
             src="/logo_notext.svg"
@@ -33,7 +34,7 @@ function Start() {
             height={800}
             priority
           />
-        </motion.div>
+        </div>
       </motion.div>
     </div>
   );

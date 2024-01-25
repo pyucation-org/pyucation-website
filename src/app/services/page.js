@@ -40,13 +40,13 @@ export default function Page() {
             <button className="px-6" onClick={() => setInfoState("ai")}>
               <h2 className="md:text-5xl text-2xl text-white">AI-Beratung</h2>
             </button>
-            {infoState == "ai" && <TabIndicator />}
+            <TabIndicator isVisible={infoState == "ai" ? true : false} />
           </div>
           <div className="flex flex-col md:px-20 py-10 ml-4 w-1/2">
             <button className="px-6" onClick={() => setInfoState("python")}>
               <h2 className="md:text-5xl text-2xl text-white">Python-Kurs</h2>
             </button>
-            {infoState == "python" && <TabIndicator />}
+            <TabIndicator isVisible={infoState == "python" ? true : false} />
           </div>
         </div>
 

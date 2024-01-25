@@ -25,7 +25,7 @@ export default function NavBar() {
 
   return (
     <header className="top-0 w-full z-50 absolute overflow-hidden">
-      <div className="flex flex-row items-center justify-evenly bg-black bg-opacity-40 backdrop-blur-lg md:rounded-b-2xl">
+      <div className="flex flex-row items-center justify-evenly bg-black bg-opacity-40 backdrop-blur-lg">
         <div className="sm:flex flex-row max-w-lg md:w-56 h-8 justify-evenly items-center">
           <Watermark />
         </div>

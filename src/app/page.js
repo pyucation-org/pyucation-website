@@ -3,7 +3,7 @@
 import Start from "./components/start";
 import Reviews from "./components/reviews";
 import Vision from "./components/vision";
-
+import Footer from "./components/footer";
 export default function Home() {
   /**
    * @description:
@@ -12,6 +12,10 @@ export default function Home() {
 
   return (
     <main className="pb-40 h-screen overflow-auto overflow-x-hidden">
+      {/*Footer with social links only for mobile view */}
+      <div className="md:hidden flex">
+        <Footer />
+      </div>
       {/*Branding Section with logo */}
       <section className="md:h-full h-fit mb-20">
         <Start />

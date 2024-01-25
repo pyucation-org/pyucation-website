@@ -16,11 +16,11 @@ function InfoContent({ content = "ai" }) {
       "Unsere Schulungen werden auf die individuellen Bedürfnisse Ihrer Organisation zugeschnitten. Wir werden Ihnen und Ihren Mitarbeiterinnen und Mitarbeitern ein fundamentales Verständnis darüber vermitteln, wie Künstliche Intelligenz funktioniert. Dabei ist unser Anspruch, jeden Menschen unabhängig von seinem Vorwissen mitzunehmen. Grundlegend ist unser Weiterbildungsprogramm in zwei Bereiche aufgeteilt:";
     infoImage = "/ai-pillars.png";
     specialText = (
-      <div className="font-sans leading-8 tracking-wider">
+      <div className="font-light leading-8 tracking-wider">
         Unsere Vorträge bieten inspirierende Einblicke in die Welt der
         Künstlichen Intelligenz. Je nach Veranstaltung gestalten wir unsere
         Auftritte. Themen in der Vergangenheit waren u. a.:
-        <ul className="list-disc list-outside md:ml-60 ml-10 text-left">
+        <ul className="list-disc list-outside md:ml-60 ml-10 text-left text-zinc-300 mt-4">
           <li>„Bullshit-Bingo vermeiden“ – Eine Begriffsabgrenzung zu KI</li>
           <li>Grundlagen des Maschinellen Lernens</li>
           <li>Deep Learning und Neuronale Netzwerke</li>
@@ -33,8 +33,16 @@ function InfoContent({ content = "ai" }) {
     infoText =
       "Wir möchten jedem Menschen das Potenzial der Programmiersprache Python zeigen. Die Entwicklung von generellen Lösungsstrategien zur Automatisierung und Datenverarbeitung sowie ein grundlegendes technisches Verständnis sind Fähigkeiten, die heutzutage unverzichtbar sind.";
     infoImage = "/python-pillars.png";
-    specialText =
-      "Wir bieten sowohl Einführungen für Anfänger als auch Kurse für Fortgeschrittene an. Module wie numpy, pandas, pytorch, sklearn, flask und viele mehr können wir ebenso bedienen. Was uns auch hier besonders auszeichnet ist der hohe Praxisbezug und die individuelle Anpassung an unsere Kundinnen und Kunden. Wir unterstützen auch bei der Verwirklichung eigener Projektideen bis zur Implementierung.";
+    specialText = (
+      <div className="font-light leading-8 tracking-wider md:text-xl text-md">
+        Wir bieten sowohl Einführungen für Anfänger als auch Kurse für
+        Fortgeschrittene an. Module wie numpy, pandas, pytorch, sklearn, flask
+        und viele mehr können wir ebenso bedienen. Was uns auch hier besonders
+        auszeichnet ist der hohe Praxisbezug und die individuelle Anpassung an
+        unsere Kundinnen und Kunden. Wir unterstützen auch bei der
+        Verwirklichung eigener Projektideen bis zur Implementierung.
+      </div>
+    );
   }
 
   return (
@@ -46,7 +54,7 @@ function InfoContent({ content = "ai" }) {
       animate="visible"
       // transition={{ layout: { duration: 0.1 } }}
     >
-      <p className="text-zinc-300 md:text-xl text-md text-center tracking-widest leading-10 font-sans">
+      <p className="text-zinc-200 md:text-xl text-md text-center tracking-widest leading-10 font-light">
         {infoText}
       </p>
       {/* <img src={infoImage} alt={content} className="w-full h-auto pt-10 pb-8" /> */}
@@ -55,17 +63,17 @@ function InfoContent({ content = "ai" }) {
         // show only if ai is selected
         content === "ai" ? (
           <div>
-            <h2 className="text-zinc-300 font-semibold text-xl mt-16 mb-2 text-center tracking-widest leading-12">
+            <h2 className="text-zinc-300 font-semibold md:text-2xl text-xl mt-16 mb-2 text-center tracking-widest leading-12">
               AI-Vorträge und Key Notes
             </h2>
             ,
-            <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
+            <p className="text-zinc-200 md:text-xl text-md text-center font-light leading-8 tracking-wider">
               {specialText}
             </p>
           </div>
         ) : (
           // show only if python is selected
-          <p className="text-zinc-300 text-xl text-center tracking-widest leading-10">
+          <p className="text-zinc-200 text-xl text-center tracking-widest leading-10 font-light">
             {specialText}
           </p>
         )

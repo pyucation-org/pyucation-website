@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ name, tag, price, text, popular }) {
   const bgColorClass = popular
-    ? "bg-primary bg-opacity-70"
+    ? "bg-primary bg-opacity-70 shadow-accentDark shadow-xl"
     : "bg-zinc-200 bg-opacity-60";
 
   return (

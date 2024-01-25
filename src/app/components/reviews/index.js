@@ -77,6 +77,7 @@ function Reviews() {
       variants={fadeInVariant}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
     >
       <h1 className="text-white md:text-6xl text-3xl font-semibold align-start text-center md:text-start leading-snug mt-5 md:w-auto w-full">
         Wir sind stolz auf 100% Kundenzufriedenheit:
