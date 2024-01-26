@@ -13,7 +13,7 @@ function AiCards() {
           <li>grundlegende Theorie zu Themen:</li>
           <ul className="list-disc text-left ml-4 text-md tracking-wider font-light space-y-2">
             <li>Maschinelles Lernen</li>
-            <li>Deep Learning und Neuronale Netze</li>
+            <li>Deep Learning und Neuronale Netzwerke</li>
             <li>Generative AI</li>
           </ul>
         </ul>
@@ -25,11 +25,12 @@ function AiCards() {
         </div>
         <ul className="list-square text-left ml-10 text-lg tracking-wider leading-6 font-sans mt-2 space-y-3">
           <li>AI/ML-Lifecycle</li>
+          <li>Anwendungsfälle und -analyse</li>
           <li className="mt-2">
-            Algorithmen und Modelle: Unterschiede und Stäken (bspw. SVM,
-            Decision Trees)
+            Algorithmen und Modelle: bspw. SVM,
+            Decision Trees
           </li>
-          <li>Evaluation Metrics</li>
+          <li>Metriken</li>
           <li>Bias und Fairness in Zusammenhang mit Daten</li>
           <li>Tools</li>
         </ul>

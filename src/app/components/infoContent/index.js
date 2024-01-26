@@ -21,7 +21,7 @@ function InfoContent({ content = "ai" }) {
         Künstlichen Intelligenz. Je nach Veranstaltung gestalten wir unsere
         Auftritte. Themen in der Vergangenheit waren u. a.:
         <ul className="list-disc list-outside md:ml-60 ml-10 text-left text-zinc-300 mt-4">
-          <li>„Bullshit-Bingo vermeiden“ – Eine Begriffsabgrenzung zu KI</li>
+          <li>Anwendungsfälle von Machine Learning in der Industrie</li>
           <li>Grundlagen des Maschinellen Lernens</li>
           <li>Deep Learning und Neuronale Netzwerke</li>
           <li>Generative AI – Potenziale und Gefahren</li>
