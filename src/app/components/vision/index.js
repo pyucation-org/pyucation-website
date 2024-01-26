@@ -39,11 +39,20 @@ function Vision() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="w-100 h-80 shadow-2x1 text-center">
+        <div className="w-100% h-100% shadow-2x1 text-center">
           <Image
-            src="/vision.png"
-            alt="Description of Image"
-            className="w-full h-full object-contain"
+            src="/vision.webp"
+            alt="our vision"
+            /*className="w-full h-full object-contain"*/
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain', // Keeps the aspect ratio
+              WebkitMaskImage: 'radial-gradient(ellipse 60% 90% at 55% 50%, black 30%, transparent 100%)',
+              maskImage: 'radial-gradient(ellipse 60% 90% at 55% 50%, black 30%, transparent 100%)',
+              maskMode: 'alpha',
+              maskComposite: 'source-out',
+            }}
             width={800}
             height={800}
           />
