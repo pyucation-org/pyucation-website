@@ -38,7 +38,7 @@ function Page() {
             Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV): Marc Benesch
           </p>
           <p className="text-white mt-10">
-            © 2024 pyucation. All Rights Reserved.
+            © {new Date().getFullYear()} pyucation. All Rights Reserved.
           </p>
         </div>
       </motion.div>
