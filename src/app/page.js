@@ -22,7 +22,7 @@ export default function Home() {
       </section>
 
       {/*Vision Section */}
-      <section className="xl:h-full h-fit mb-20">
+      <section className="xl:h-fit h-fit mb-20">
         <Vision />
       </section>
 
