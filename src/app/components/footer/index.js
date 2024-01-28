@@ -6,10 +6,10 @@ function index() {
   return (
     <motion.div
       className="bottom-2 right-0 absolute z-50 flex flex-row max-w-lg w-40 h-8 justify-center items-center"
-      variants={fadeInRight}
-      initial="hidden"
-      animate="visible"
-      transition={{ delay: 1 }}
+      // variants={fadeInRight}
+      // initial="hidden"
+      // animate="visible"
+      // transition={{ delay: 1 }}
     >
       <SocialIcon
         url="https://github.com/pyucation"
