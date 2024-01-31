@@ -6,6 +6,7 @@ import InfoContent from "../components/infoContent";
 import PricingCards from "../components/pricingCards";
 import TabIndicator from "../components/tabIndicator";
 import { fadeInVariant } from "../util/variants";
+import PrivacyModal from "../components/privacyModal";
 
 export default function Page() {
   //State of Information Tab
@@ -65,6 +66,8 @@ export default function Page() {
           <PricingCards content={infoState} />
         </div>
       </div>
+      {/*Data Privacy Consent */}
+      <PrivacyModal />
     </main>
   );
 }

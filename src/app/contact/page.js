@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { fadeInVariant } from "../util/variants";
+import PrivacyModal from "../components/privacyModal";
 
 export default function Page() {
   return (
@@ -116,6 +117,8 @@ export default function Page() {
           </form>
         </div>
       </motion.div>
+      {/*Data Privacy Consent */}
+      <PrivacyModal />
     </main>
   );
 }

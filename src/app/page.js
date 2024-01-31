@@ -4,7 +4,6 @@ import Start from "./components/start";
 import Reviews from "./components/reviews";
 import Vision from "./components/vision";
 import Footer from "./components/footer";
-import CookieConsentBanner from "./components/privacyModal";
 import PrivacyModal from "./components/privacyModal";
 export default function Home() {
   /**
@@ -34,8 +33,7 @@ export default function Home() {
       </section>
 
       {/*Data Privacy Consent */}
-        <PrivacyModal />
-
+      <PrivacyModal />
     </main>
   );
 }
