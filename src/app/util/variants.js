@@ -7,6 +7,16 @@ export const fadeInVariant = {
   hidden: { opacity: 0, y: 75 },
   visible: { opacity: 1, y: 0 },
 };
+export const fadeInVariantDelay = {
+  hidden: { opacity: 0, y: 75 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.7,
+    },
+  },
+};
 
 export const fadeInRight = {
   hidden: { opacity: 0, x: 250 },

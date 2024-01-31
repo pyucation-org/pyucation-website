@@ -3,7 +3,8 @@
 import { motion, useScroll } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import { fadeInVariant } from "../util/variants";
-function Page() {
+
+function PrivacyPolicy() {
   const scrollRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -21,27 +22,21 @@ function Page() {
         <div className="flex"></div>
         <div className="py-4 rounded-lg shadow-lg max-w-2xl px-4">
           <h1 className="text-white md:text-5xl text-4xl font-semibold mb-10 tracking-tight text-left">
-            Impressum
+            Datenschutzrichtlinien
           </h1>
           <p className="text-white mb-2">
-            <strong>Marc Benesch - pyucation</strong>
+            Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und halten uns strikt an die Regeln der Datenschutzgesetze. Personenbezogene Daten werden auf dieser Webseite nur im technisch notwendigen Umfang erhoben. In keinem Fall werden die erhobenen Daten verkauft oder aus anderen Gründen an Dritte weitergegeben.
           </p>
-          <p className="text-white mb-6">Wiegandweg 4, 80937 München</p>
-          <p className="text-white mb-2">Telefon: +49 152 58521568</p>
-          <p className="text-white mb-2">Email: marc.benesch@pyucation.de</p>
-          <p className="text-white mb-6">Geschäftsführer: Marc Benesch</p>
-          <p className="text-white mb-2">Handelsregister: tbd</p>
           <p className="text-white mb-2">
-            Umsatzsteuer-ID: umsatzsteuerbefreit nach § 19 UStG
+            Die nachfolgende Erklärung gibt Ihnen einen Überblick darüber, wie wir diesen Schutz gewährleisten und welche Art von Daten zu welchem Zweck erhoben werden.
           </p>
-          <p className="text-white my-2">
-            Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV): Marc Benesch
+
+          <p className="text-white mb-2">
+            Nutzen Sie das Kontaktformular, werden Ihre Daten per E-Mail ans uns übertragen. Diese dienen lediglich der Kontaktaufnahme und werden für keine weiteren Zwecke als diesen verwendet.
           </p>
-          <p className="text-white my-2">
-            Unsere Datenschutzbestimmungen finden Sie <a href="/privacy-policy">hier</a>.
-          </p>
+
           <p className="text-white mt-10">
-            © {new Date().getFullYear()} pyucation. All Rights Reserved.
+            © {new Date().getFullYear()} Marc Benesch - pyucation. Alle Rechte vorbehalten.
           </p>
         </div>
       </motion.div>
@@ -49,4 +44,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default PrivacyPolicy;
