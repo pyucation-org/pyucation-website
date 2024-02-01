@@ -34,7 +34,7 @@ export const pricingsPython = [
     price: "140",
     description: (<>
       <ul className="checkmark-bullet ml-2 text-left">
-          <li>ab 2 Teilnehmern</li>
+          <li>ab 3 Teilnehmern</li>
           <li>vor Ort möglich</li>
           <li>auf Wunsch: competitive coding</li>
           <li>gemeinsamer Fortschritt</li>
