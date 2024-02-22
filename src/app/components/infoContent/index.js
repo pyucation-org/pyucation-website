@@ -48,7 +48,7 @@ function InfoContent({ content = "ai" }) {
   return (
     //Layout transition is commented out due to sporadical stutter during the animation
     <motion.div
-      // layout
+      key={content}
       variants={fadeInVariant}
       initial="hidden"
       animate="visible"
