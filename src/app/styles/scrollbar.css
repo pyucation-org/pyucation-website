@@ -1,0 +1,31 @@
+/* scrollbar.css */
+
+/* WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #29d6b7;
+  border-radius: 10px;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+  width: 0.4vw;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #29d6b7; /* Light blue color */
+  border-radius: 10px; /* Curved edges */
+}
+
+/* Edge */
+::-ms-scrollbar {
+  width: 0.4vw;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #29d6b7; /* Light blue color */
+  border-radius: 10px; /* Curved edges */
+}

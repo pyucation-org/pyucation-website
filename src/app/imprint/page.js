@@ -19,7 +19,7 @@ function Page() {
         animate="visible"
       >
         <div className="flex"></div>
-        <div className="py-4 rounded-lg shadow-lg max-w-2xl px-4">
+        <div className="py-4 rounded-lg max-w-2xl px-4">
           <h1 className="text-white md:text-5xl text-4xl font-semibold mb-10 tracking-tight text-left">
             Impressum
           </h1>
@@ -38,7 +38,8 @@ function Page() {
             Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV): Marc Benesch
           </p>
           <p className="text-white my-2">
-            Unsere Datenschutzbestimmungen finden Sie <a href="/privacy-policy">hier</a>.
+            Unsere Datenschutzbestimmungen finden Sie{" "}
+            <a href="/privacy-policy">hier</a>.
           </p>
           <p className="text-white mt-10">
             © {new Date().getFullYear()} pyucation. All Rights Reserved.

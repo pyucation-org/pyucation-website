@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Inter, Roboto } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
+import "./styles/scrollbar.css";
 
 export const metadata = {
   title: "Pyucation - Weiterbildung und Beratung in KI und Python",
@@ -10,10 +11,11 @@ export const metadata = {
     "Wir bieten Weiterbildungen und Beratung in Python und Künstliche Intelligenz an: Python Grundlagen und Machine Learning für Anfänger, Fortgeschrittene, Unternehmen und Bildungseinrichtungen. Wir unterstützen auch bei der Realisierung eigener Ideen.",
   author: "pyucation",
   verification: {
-    google: "ihI_EIaHOycb2xrwq3DHgsmFd0b-aK0xbXSPoT7Jr_k"
+    google: "ihI_EIaHOycb2xrwq3DHgsmFd0b-aK0xbXSPoT7Jr_k",
   },
-  keywords: "Python, Beratung, Projekte, AI, KI, künstliche Intelligenz, Machine Learning, Deep Learning, Neuronale Netzwerke, Workshops, Usecases KI, Weiterbildung, Unterricht, Kurse, Entwicklung, Software"
-  };
+  keywords:
+    "Python, Beratung, Projekte, AI, KI, künstliche Intelligenz, Machine Learning, Deep Learning, Neuronale Netzwerke, Workshops, Usecases KI, Weiterbildung, Unterricht, Kurse, Entwicklung, Software",
+};
 
 export default function RootLayout({ children }) {
   return (

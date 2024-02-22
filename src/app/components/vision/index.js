@@ -12,7 +12,7 @@ function Vision() {
    */
   return (
     <motion.div
-      className="flex flex-col md:h-auto h-fit max-w-6xl md:justify-start items-start mx-auto px-8"
+      className="flex flex-col md:h-auto h-fit max-w-6xl md:justify-start items-start mx-auto xl:px-0 px-8"
       variants={fadeInVariant}
       initial="hidden"
       whileInView="visible"

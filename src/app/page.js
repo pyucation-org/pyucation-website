@@ -5,21 +5,35 @@ import Reviews from "./components/reviews";
 import Vision from "./components/vision";
 import Footer from "./components/footer";
 import PrivacyModal from "./components/privacyModal";
+import { useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 export default function Home() {
   /**
    * @description:
    * Landing page of the website. Includes branding, vision and user reviews/recommendations
    */
 
+  const scrollRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    container: scrollRef,
+  });
+
+  // Use useTransform to scale scrollYProgress
+  const scaledProgress = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+
   return (
-    <main className="pb-40 h-screen overflow-auto overflow-x-hidden">
+    <main
+      ref={scrollRef}
+      className="pb-40 h-screen overflow-auto overflow-x-hidden"
+    >
       {/*Footer with social links only for mobile view */}
       <div className="md:hidden flex">
         <Footer />
       </div>
       {/*Branding Section with logo */}
       <section className="md:h-full h-fit mb-20">
-        <Start />
+        <Start scrollYProgress={scaledProgress} />
       </section>
 
       {/*Vision Section */}

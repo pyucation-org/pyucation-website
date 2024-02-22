@@ -25,7 +25,10 @@ function ReviewCard({ reviewText, name, location }) {
   }
 
   return (
-    <div className="review-card" style={{ backgroundColor: getRandomShadeColor("#032530") }}>
+    <div
+      className="review-card"
+      style={{ backgroundColor: getRandomShadeColor("#032530") }}
+    >
       <p className="text-white font-light italic text-sm leading-relaxed tracking-wider">
         {reviewText}
       </p>

@@ -31,6 +31,7 @@ module.exports = {
       animation: {
         "fade-in-upwards": "fadein 0.3s 1",
         "fade-in-drop-shadow": "dropshadow 2s 1",
+        gradient: "gradient 1.2s linear infinite",
       },
       keyframes: {
         fadein: {
@@ -53,6 +54,10 @@ module.exports = {
           "100%": {
             filter: "drop-shadow(0px 0px 0px #27B2DA)",
           },
+        },
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "100% 50%" },
         },
       },
     },
