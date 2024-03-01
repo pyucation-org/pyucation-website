@@ -38,7 +38,10 @@ export default function Page() {
         {/*Tabs */}
         <div className="flex align-center justify-between w-full mt-28">
           <div className="flex flex-col md:px-20 py-10 mr-4 w-1/2">
-            <button className="px-6" onClick={() => setInfoState("ai")}>
+            <button
+              className="px-6 min-w-fit"
+              onClick={() => setInfoState("ai")}
+            >
               <h2
                 className={`py-1 md:text-5xl text-2xl text-transparent gradient-text ${
                   infoState !== "ai" && "hover:animate-gradient"

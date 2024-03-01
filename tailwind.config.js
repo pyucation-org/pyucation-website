@@ -25,7 +25,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "pyucation-1": "url('/background/1.jpg')",
+        "pyucation-1": "url('/background/pyu_background_1.png')",
         "pyucation-2": "url('/background/4_edited.jpg')",
       },
       animation: {
