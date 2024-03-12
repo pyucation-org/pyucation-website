@@ -192,11 +192,28 @@
   text-align: center;
   background-color: #0f313c;
   box-shadow: 0 0 15px rgba(15,49,60,255);
+  min-width: 100px;
+  min-height: 100px;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .offering {
+    flex-basis: 100%; /* Jede Kachel nimmt die volle Breite ein */
+    max-width: 100%; /* Verhindert, dass die Kacheln breiter als der Bildschirm sind */
+  }
+}
+@media (max-width: 768px) {
+  .offering {
+    margin: 10px; /* Kleinerer Abstand */
+    padding: 20px; /* Angepasstes Padding für kleinere Bildschirme */
+  }
 }
 
 .offering p {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+  font: light;
 }
 
 .custom-icon {
