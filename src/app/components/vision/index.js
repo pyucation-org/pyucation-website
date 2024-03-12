@@ -4,6 +4,7 @@ import { fadeInVariant } from "@/app/util/variants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import Offerings from "./offerings";
 
 function Vision() {
   /**
@@ -18,7 +19,11 @@ function Vision() {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <h1 className="text-white text-6xl font-semibold align-start text-center md:text-start leading-snug">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet"></link>
+      <h1 className="text-white text-6xl font-semibold align-start text-center md:text-start leading-snug mb-4">Unser Angebot für Sie</h1>
+      <Offerings/>
+    
+      <h1 className="text-white text-6xl font-semibold align-start text-center md:text-start leading-snug mt-20">
         Unsere Vision
       </h1>
       <motion.p
