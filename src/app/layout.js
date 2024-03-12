@@ -14,7 +14,7 @@ export const metadata = {
     google: "ihI_EIaHOycb2xrwq3DHgsmFd0b-aK0xbXSPoT7Jr_k",
   },
   keywords:
-    "Python, Beratung, Projekte, AI, KI, künstliche Intelligenz, Machine Learning, Deep Learning, Neuronale Netzwerke, Workshops, Usecases KI, Weiterbildung, Unterricht, Kurse, Entwicklung, Software",
+    "Python, Beratung, Projekte, AI, KI, künstliche Intelligenz, Machine Learning, Deep Learning, Neuronale Netzwerke, Workshops, Usecases KI, Weiterbildung, Unterricht, Kurse, Entwicklung, Software, Python Kurse für Unternehmen, Implementierung mit Python, Python Automatisierung lernen, Workshops in Künstlicher Intelligenz, KI Kurse für Anfänger bis Fortgeschrittene, Machine Learning Workshop, Deep Learning Training, Python Training München, Einführung in neuronale Netzwerke, datenanalyse mit python, deep learning training, gefahren der künstlichen intelligenz, ki anwendungsfälle, machine learning in der industrie, machine learning workshop, Machine Learning Workshop München, python nachhilfe münchen",
 };
 
 export default function RootLayout({ children }) {
