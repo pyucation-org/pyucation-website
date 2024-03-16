@@ -10,8 +10,15 @@
 
 @layer base {
   body {
-    @apply bg-pyucation-1 bg-cover;
+    @apply bg-pyucation-1-small bg-cover;
   }
+
+  @screen md {
+    body {
+      @apply bg-pyucation-1 bg-cover;
+    }
+  }
+
 }
 
 @layer utilities {

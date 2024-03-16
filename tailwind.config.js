@@ -26,6 +26,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "pyucation-1": "url('/background/pyu_background_1.webp')",
+        "pyucation-1-small": "url('/background/pyu_bg_mobile.webp')",
         "pyucation-2": "url('/background/4_edited.jpg')",
       },
       animation: {
