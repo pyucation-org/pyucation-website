@@ -183,3 +183,42 @@
 .modal-content button:hover {
   background-color: #218838;
 }
+
+
+.offerings-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.offering {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  text-align: center;
+  background-color: #0f313c;
+  box-shadow: 0 0 15px rgba(15,49,60,255);
+  min-width: 100px;
+  min-height: 100px;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .offering {
+    flex-basis: 100%; /* Jede Kachel nimmt die volle Breite ein */
+    max-width: 100%; /* Verhindert, dass die Kacheln breiter als der Bildschirm sind */
+  }
+}
+@media (max-width: 768px) {
+  .offering {
+    margin: 10px; /* Kleinerer Abstand */
+    padding: 20px; /* Angepasstes Padding für kleinere Bildschirme */
+  }
+}
+
+
+.custom-icon {
+  color: white;
+  font-size: 48px;
+}
