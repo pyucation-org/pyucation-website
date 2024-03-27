@@ -74,7 +74,7 @@ export default function Page() {
         {/*Pricing */}
         <motion.div className="w-full">
           <h2 className="mx-auto w-full text-center mt-20 text-white md:text-4xl text-3xl">
-            Preismodelle
+            Unsere Kursmodelle
           </h2>
         </motion.div>
         <div className="mx-auto w-full mt-10">

@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./card";
+import AICard from "./AiCard";
 import { pricingsAI, pricingsPython } from "@/app/util/pricingOptions";
 
 function PricingCards({ content = "python" }) {
@@ -20,11 +21,10 @@ function PricingCards({ content = "python" }) {
           })
         : pricingsAI.map((el, index) => {
             return (
-              <Card
+              <AICard
                 key={"key-index"}
                 name={el.name}
                 tag={el.tag}
-                price={el.price}
                 text={el.description}
                 popular={el.popular}
               />
