@@ -3,6 +3,7 @@
 import Start from "./components/start";
 import Reviews from "./components/reviews";
 import Vision from "./components/vision";
+import Partners from "./components/partners";
 import Footer from "./components/footer";
 import PrivacyModal from "./components/privacyModal";
 import { useScroll, useTransform } from "framer-motion";
@@ -44,6 +45,11 @@ export default function Home() {
       {/*Customer Reviews */}
       <section className="md:h-full h-fit xl:mt-0 mt-20 mb-20">
         <Reviews />
+      </section>
+
+      {/*Partners Section */}
+      <section className="xl:h-fit h-fit mb-20">
+        <Partners />
       </section>
 
       {/*Data Privacy Consent */}
