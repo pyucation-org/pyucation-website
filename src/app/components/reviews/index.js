@@ -3,6 +3,7 @@ import React from "react";
 import Carousel from "../reviewCarousel";
 import { fadeInVariant } from "@/app/util/variants";
 import ReviewCard from "./reviewCard";
+import LogoCard from "./logoCard";
 
 function Reviews() {
   // Array of review data
@@ -57,6 +58,18 @@ function Reviews() {
     },
   ];
 
+  const partnerLogos = [
+    { src: "public/partners/BPP-Polizei.webp", alt: "Bayerische Bereitschaftspolizei" },
+    { src: "public/partners/Burg-Waechter.webp", alt: "Burg-Wächter GmbH & Co. KG" },
+    { src: "public/partners/cmt-logo.webp", alt: "cmt GmbH" },
+    { src: "public/partners/fraunhofer-iao.webp", alt: "Fraunhofer IAO Stuttgart" },
+    { src: "public/partners/hs-luftfilterbau.webp", alt: "HS Luftfilterbau GmbH" },
+    { src: "public/partners/Matterkind.webp", alt: "Matterkind" },
+    { src: "public/partners/PWC.webp", alt: "PWC Deutschland" },
+    { src: "public/partners/SV_Group.webp", alt: "SV Group" },
+    { src: "public/partners/SWM.webp", alt: "Stadtwerke München" },
+  ]
+
   const fadeInAnimation = {
     initial: {
       opacity: 0,
@@ -79,6 +92,9 @@ function Reviews() {
       whileInView="visible"
       viewport={{ once: true }}
     >
+
+      
+
       <h1 className="text-white md:text-6xl text-3xl font-semibold align-start text-center md:text-start leading-snug mt-5 md:w-auto w-full">
         Wir sind stolz auf 100% Kundenzufriedenheit:
       </h1>
