@@ -93,7 +93,19 @@ function Reviews() {
       viewport={{ once: true }}
     >
 
-      
+      <div className="flex flex-wrap justify-center items-center w-full mt-10 gap-4">
+              {partnerLogos.map((logo, index) => (
+                <motion.div
+                  key={index}
+                  variants={fadeInAnimation}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true }}
+                >
+                  <LogoCard src={logo.src} alt={logo.alt} />
+                </motion.div>
+              ))}
+      </div>
 
       <h1 className="text-white md:text-6xl text-3xl font-semibold align-start text-center md:text-start leading-snug mt-5 md:w-auto w-full">
         Wir sind stolz auf 100% Kundenzufriedenheit:
