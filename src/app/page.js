@@ -43,12 +43,12 @@ export default function Home() {
       </section>
 
       {/*Customer Reviews */}
-      <section className="md:h-full h-fit xl:mt-0 mt-20 mb-20">
+      <section className="h-fit xl:mt-0 mt-20 mb-20">
         <Reviews />
       </section>
 
       {/*Partners Section */}
-      <section className="xl:h-fit h-fit mb-20">
+      <section className="md:h-full xl:h-fit h-fit mb-20">
         <Partners />
       </section>
 

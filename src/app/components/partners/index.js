@@ -5,7 +5,10 @@ import LogoCard from "./logoCard"; // Use default import
 
 function Partners() {
   const partnerLogos = [
-    { src: "/partners/BPP-Polizei.webp", alt: "Bayerische Bereitschaftspolizei" },
+    {
+      src: "/partners/BPP-Polizei.webp",
+      alt: "Bayerische Bereitschaftspolizei",
+    },
     { src: "/partners/Burg-Waechter.webp", alt: "Burg-Wächter GmbH & Co. KG" },
     { src: "/partners/cmt-logo.webp", alt: "cmt GmbH" },
     { src: "/partners/fraunhofer-iao.webp", alt: "Fraunhofer IAO Stuttgart" },
@@ -13,7 +16,7 @@ function Partners() {
     { src: "/partners/Matterkind.webp", alt: "Matterkind" },
     { src: "/partners/PWC.webp", alt: "PWC Deutschland" },
     { src: "/partners/SV_Group.webp", alt: "SV Group" },
-    { src: "/partners/SWM.webp", alt: "Stadtwerke München" }
+    { src: "/partners/SWM.webp", alt: "Stadtwerke München" },
   ];
 
   const fadeInAnimation = {
@@ -38,24 +41,23 @@ function Partners() {
       whileInView="visible"
       viewport={{ once: true }}
     >
+      <h1 className="text-white md:text-6xl text-3xl font-semibold align-start text-center md:text-start leading-snug mt-5 md:w-auto w-full">
+        Kunden und Partner
+      </h1>
 
-        <h1 className="text-white md:text-6xl text-3xl font-semibold align-start text-center md:text-start leading-snug mt-5 md:w-auto w-full">
-            Kunden und Partner:
-        </h1>
-
-        <div className="flex flex-wrap justify-center items-center w-full mt-10 gap-4">
+      <div className="flex flex-wrap justify-center items-center w-full mt-28 gap-4 xl:gap-6">
         {partnerLogos.map((logo, index) => (
-            <motion.div
+          <motion.div
             key={index}
             variants={fadeInAnimation}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            >
+          >
             <LogoCard src={logo.src} alt={logo.alt} />
-            </motion.div>
+          </motion.div>
         ))}
-        </div>
+      </div>
     </motion.div>
   );
 }

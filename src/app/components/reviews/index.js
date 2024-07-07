@@ -79,7 +79,7 @@ function Reviews() {
       viewport={{ once: true }}
     >
       <h1 className="text-white md:text-6xl text-3xl font-semibold align-start text-center md:text-start leading-snug mt-5 md:w-auto w-full">
-        Wir sind stolz auf 100% Kundenzufriedenheit:
+        Wir sind stolz auf 100% Kundenzufriedenheit
       </h1>
       <div className="flex flex-wrap md:justify-start justify-center items-center w-full mt-28 gap-4">
         {reviews.map((review, index) => (
