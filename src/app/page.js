@@ -47,10 +47,11 @@ export default function Home() {
         <Reviews />
       </section>
 
-      {/*Partners Section */}
+      {/*Partners Section
       <section className="md:h-full xl:h-fit h-fit mb-20">
         <Partners />
       </section>
+      */}
 
       {/*Data Privacy Consent */}
       <PrivacyModal />
