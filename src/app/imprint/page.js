@@ -32,7 +32,7 @@ function Page() {
           <p className="text-white mb-6">Geschäftsführer: Marc Benesch</p>
           <p className="text-white mb-2">Handelsregister: tbd</p>
           <p className="text-white mb-2">
-            Umsatzsteuer-ID: umsatzsteuerbefreit nach § 19 UStG
+            Umsatzsteuer-ID: 144/138/10389
           </p>
           <p className="text-white my-2">
             Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV): Marc Benesch
