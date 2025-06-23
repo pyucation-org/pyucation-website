@@ -24,18 +24,18 @@ function Page() {
             Impressum
           </h1>
           <p className="text-white mb-2">
-            <strong>Marc Benesch - pyucation</strong>
+            <strong>Marc Benesch - pyucation, Einzelunternehmen</strong>
           </p>
-          <p className="text-white mb-6">Wiegandweg 4, 80937 München</p>
-          <p className="text-white mb-2">Telefon: +49 152 58521568</p>
+          <p className="text-white mb-6">Bucheggstrasse 21, 8037 Zürich</p>
+          <p className="text-white mb-2">Telefon: +41 79 389 56 77</p>
           <p className="text-white mb-2">Email: marc.benesch@pyucation.de</p>
           <p className="text-white mb-6">Geschäftsführer: Marc Benesch</p>
-          <p className="text-white mb-2">Handelsregister: tbd</p>
+          <p className="text-white mb-2">Handelsregister: n.a.</p>
           <p className="text-white mb-2">
-            Umsatzsteuer-ID: 144/138/10389
+            Umsatzsteuer-ID: n.a.
           </p>
           <p className="text-white my-2">
-            Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV): Marc Benesch
+            Verantwortlich für den Inhalt: Marc Benesch
           </p>
           <p className="text-white my-2">
             Unsere Datenschutzbestimmungen finden Sie{" "}
