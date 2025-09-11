@@ -1,6 +1,7 @@
 "use client";
 
 import Start from "./components/start";
+import SubscribeEmbed from "./components/subscribe_button";
 import Reviews from "./components/reviews";
 import Vision from "./components/vision";
 import Partners from "./components/partners";
@@ -41,6 +42,11 @@ export default function Home() {
       <section className="xl:h-fit h-fit mb-20">
         <Vision />
       </section>
+
+      {/*Subscribe Button from Substack */}
+      <div className="flex justify-center text-zinc-500 md:text-xl text-lg tracking-widest">
+        <SubscribeEmbed />
+      </div>
 
       {/*Customer Reviews */}
       <section className="h-fit xl:mt-0 mt-20 mb-20">
