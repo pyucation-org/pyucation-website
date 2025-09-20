@@ -14,7 +14,7 @@ export default function SubscribeEmbed() {
           frameBorder="0"
           scrolling="no"
           loading="lazy"
-          title="Subscribe to pyucation on Substack"
+          title="Abonnieren Sie pyucation auf Substack"
         />
       </div>
     );
